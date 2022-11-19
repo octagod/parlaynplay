@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/open-bet.css">
+    <title>Parlay N Play</title>    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <ul class="sidenav" id="mobile-menu">
+        <li class="red-gradient">
+            <div class="space-box"></div>
+            <div class="space-box center">
+                <img src="/assets/logo.png" alt="parlay n play" class="halfwidth">
+            </div>
+            <div class="space-box"></div>
+        </li>
+        <li class="space-box black">
+            <span class="white-text">Amount at Risk: <span class="amount-at-risk bold">0 USD</span></span>
+        </li>
+        <li><a href="/sports/?type=straight" class="black-text">SPORTS</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/open-bets.html" class="black-text">OPEN BETS</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/history.html" class="black-text">HISTORY</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/rules.html" class="black-text">RULES</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/request-payout.html" class="black-text">REQUEST PAYOUT</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="black-text logout">LOGOUT</a></li>
+        <li><div class="divider"></div></li>
+    </ul>
+
+
+    <div class="content shadow">
+        <header class="red-gradient flex justify-center align-center hide-on-med-and-down">
+            <span class="white-text">Account: <span class="account-name bold">Loading..</span></span>
+            <span class="white-text space-box">|</span>
+            <span class="white-text">Available Balance: <span class="available-balance bold">0 USD</span></span>
+            <span class="white-text space-box">|</span>
+            <span class="white-text">Amount at Risk: <span class="amount-at-risk bold">0 USD</span></span>
+        </header>
+        <div class="logo-div space-box-20 red-gradient hide-on-med-and-down">
+            <div class="center">
+                <img src="/assets/logo.png" alt="" class="xsmallwidth">
+            </div>
+        </div>
+        <div class="nav red-gradient flex justify-center align-center hide-on-med-and-down">
+
+            <a href="/sports/?type=straight" class="white-text">SPORTS</a>
+            <span class="white-text space-box">|</span>
+
+            <a href="/open-bets.html" class="white-text">OPEN BETS</a>
+            <span class="white-text space-box">|</span>
+            <a href="/history.html" class="white-text">HISTORY</a>
+            <span class="white-text space-box">|</span>
+            <a href="/rules.html" class="white-text">RULES</a>
+            <span class="white-text space-box">|</span>
+            <a href="/request-payout.html" class="white-text">REQUEST PAYOUT</a>
+            <span class="white-text space-box">|</span>
+            <a class="white-text logout">LOGOUT</a>
+        </div>
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header hide-on-large-only">
+            <div class="header red-gradient white-text bebas center space-box">
+                <h5>PARLAY N PLAY</h5>
+            </div>
+            <div class="mobile-nav flex space-between align-center space-box white">
+                <div class="menu">
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i
+                        class="material-icons black-text">menu</i></a>
+                </div>
+                <div class="amount_details">
+                    <span class="">Balance: <span class="available-balance bold">0 USD</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="below-nav black flex justify-center align-center">
+            <a class="white-text straight clickable">STRAIGHT</a>
+            <span class="white-text space-box">|</span>
+            <a class="white-text parley clickable">PARLAY</a>
+        </div>
+        <div class="wrapper space-box-20">
+            <h4 class="center type">OPEN BETS</h4>
+            <div class="divider"></div>
+            <div class="space-box"></div>
+            <div class="sports">
+                <div class="loading center">
+                    <style>
+                        .loading img {
+                            width: 50px;
+                        }
+                    </style>
+                    <img src="/assets/loading.gif" alt="" class="smallwidth">
+                </div>
+                <div class="straight">
+                    <table>
+                        <thead class="white-text black space-box">
+                            <th colspan="4">
+                                Straight Open Bets
+                            </th>
+                        </thead>
+                        <thead>
+                            <th>Ticket ID</th>
+                            <th>Date</th>
+                            <th>Game</th>
+                            <th>Potential Win</th>
+                            <!-- <th>Actions</th> -->
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </div>
+                <div class="space-box-20"></div>
+                <div class="parley">
+                    <table>
+                        <thead class="white-text black space-box">
+                            <th colspan="5">
+                                Parlay Open Bets
+                            </th>
+                        </thead>
+                        <thead>
+                            <th>Ticket ID</th>
+                            <th>Date</th>
+                            <th>Game Count</th>
+                            <th>potential Win</th>
+                            <th>View Ticket</th>
+                            <!-- <th>Actions</th> -->
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup hide">
+            <div class="risk-pop-up white border10 shadow padding-50 halfwidth">
+                <style>
+                    h1.cancel-btn {
+                        margin: 0 !important;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                    }
+                </style>
+                <h1 class="cancel-btn red-text">×</h1>
+                <p>GAMES ON TICKET — <span class="uppercase ticket-id"></span></p>
+                
+                <div class="games-table">
+                    <table>
+                        <thead>
+                            <th>Id</th>
+                            <th>Date</th>
+                            <th>Game</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="games">
+
+                </div>
+                <div class="space-box">
+                    <div class="parley-risk-amount">
+                        <p class="center"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="options-popup hide">
+            <!-- OPTIONS : REQUEST PAYMENT | CLOSE BET | COPY BET ID -->
+            <div class="options white border10 shadow padding-50 halfwidth">
+                <style>
+                    h3.close-options {
+                        margin: 0 !important;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        display: inline-block;
+                    }
+                </style>
+                <h3 class="close-options red-text">×</h3>
+                <h5>Bet Options</h5>
+                <p class="content">
+                    Select one of the following options for your bet
+                </p>
+                <div class="grid_2 gap">
+                    <!-- <a class="btn fullwidth request-payout white-text green waves-effect waves-light border10 clickable">Request Payout</a> -->
+                    <!-- <a class="btn fullwidth close-bet white-text brand-color waves-effect waves-light border10 clickable">Close Bet</a> -->
+                    <a class="btn fullwidth copy-bet white-text blue waves-effect waves-light border10 clickable">Copy Bet ID</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Show side nav in mobile view
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+
+        });
+    </script>
+    <script src="/javascript/general.js"></script>
+    <script src="/javascript/authjs.js"></script>
+    <script src="/javascript/open-bet.js"></script>
+</body>
+</html>

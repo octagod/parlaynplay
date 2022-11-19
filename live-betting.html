@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/general.css">
+    <title>Parlay N Play</title>    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <ul class="sidenav" id="mobile-menu">
+        <li class="red-gradient">
+            <div class="space-box"></div>
+            <div class="space-box center">
+                <img src="/assets/logo.png" alt="parlay n play" class="halfwidth">
+            </div>
+            <div class="space-box"></div>
+        </li>
+        <li class="space-box black">
+            <span class="white-text">Amount at Risk: <span class="amount-at-risk bold">0 USD</span></span>
+        </li>
+        <li><a href="/sports/?type=straight" class="black-text">SPORTS</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/open-bets.html" class="black-text">OPEN BETS</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/history.html" class="black-text">HISTORY</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/rules.html" class="black-text">RULES</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/request-payout.html" class="black-text">REQUEST PAYOUT</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="black-text logout">LOGOUT</a></li>
+        <li><div class="divider"></div></li>
+    </ul>
+
+
+    <div class="content shadow">
+        <header class="red-gradient flex justify-center align-center hide-on-med-and-down">
+            <span class="white-text">Account: <span class="account-name bold">Loading..</span></span>
+            <span class="white-text space-box">|</span>
+            <span class="white-text">Available Balance: <span class="available-balance bold">0 USD</span></span>
+            <span class="white-text space-box">|</span>
+            <span class="white-text">Amount at Risk: <span class="amount-at-risk bold">0 USD</span></span>
+        </header>
+        <div class="logo-div space-box-20 red-gradient hide-on-med-and-down">
+            <div class="center">
+                <img src="/assets/logo.png" alt="" class="xsmallwidth">
+            </div>
+        </div>
+        <div class="nav red-gradient flex justify-center align-center hide-on-med-and-down">
+
+            <a href="/sports/?type=straight" class="white-text">SPORTS</a>
+            <span class="white-text space-box">|</span>
+
+            <a href="/open-bets.html" class="white-text">OPEN BETS</a>
+            <span class="white-text space-box">|</span>
+            <a href="/history.html" class="white-text">HISTORY</a>
+            <span class="white-text space-box">|</span>
+            <a href="/rules.html" class="white-text">RULES</a>
+            <span class="white-text space-box">|</span>
+            <a href="/request-payout.html" class="white-text">REQUEST PAYOUT</a>
+            <span class="white-text space-box">|</span>
+            <a class="white-text logout">LOGOUT</a>
+        </div>
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header hide-on-large-only">
+            <div class="header red-gradient white-text bebas center space-box">
+                <h5>PARLAY N PLAY</h5>
+            </div>
+            <div class="mobile-nav flex space-between align-center space-box white">
+                <div class="menu">
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i
+                        class="material-icons black-text">menu</i></a>
+                </div>
+                <div class="amount_details">
+                    <span class="">Balance: <span class="available-balance bold">0 USD</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="below-nav black flex justify-center align-center">
+            <a class="white-text straight clickable">STRAIGHT</a>
+            <span class="white-text space-box">|</span>
+            <a class="white-text parley clickable">PARLAY</a>
+        </div>
+        <div class="wrapper space-box-20">
+            <h4 class="center type">LIVE BETTING</h4>
+            <div class="divider"></div>
+            <div class="space-box"></div>
+            <div class="sports center">
+                COMING SOON
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Show side nav in mobile view
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+
+        });
+    </script>
+    <script src="/javascript/general.js"></script>
+    <script src="/javascript/authjs.js"></script>
+</body>
+</html>

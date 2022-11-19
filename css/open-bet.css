@@ -1,0 +1,39 @@
+table {
+    border: 1px solid #e0e0e0 !important;
+}
+div.straight h5,div.parley h5 {
+    margin-bottom: 0px !important;
+}
+th,td {
+    border-right: 1px solid #e0e0e0 !important;
+}
+div.green-dot, div.red-dot {
+    margin: 2px auto !important;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+div.green-dot {
+    background-color: rgb(2, 210, 2);
+}
+div.red-dot {
+    background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .sports {
+        overflow-x: scroll !important;
+    }
+    td,th {
+        white-space: nowrap;
+    }
+    .risk-pop-up.halfwidth {
+        width: 90% !important;
+    }
+    .padding-50 {
+        padding: 20px !important;
+    }
+    .games-table table td.game-name {
+        white-space: break-spaces;
+    }
+}

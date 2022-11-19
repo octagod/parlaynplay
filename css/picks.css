@@ -1,0 +1,74 @@
+.outright-wrapper, .regular-wrapper {
+    margin-bottom: 70px;
+}
+table {
+    border: 1px solid rgb(228, 228, 228) !important;
+}
+th, td {
+    border-right: 1px solid rgb(228, 228, 228) !important;
+}
+.line-from {
+    text-align: right;
+}
+.outright-title {
+    text-transform: uppercase;
+}
+.outright_continue_btn {
+    border: 0px solid transparent;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.button-holder {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.continue-button {
+    border: 0px solid transparent !important;
+    background: linear-gradient(to top, rgb(112, 28, 28), rgb(224, 35, 35));
+    color: white;
+    padding: 15px;
+    width: 40%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sports {
+    overflow-x: scroll !important;
+}
+@media screen and (max-width: 950px) {
+    body,html,.wrapper {
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+    }
+    .sports {
+        overflow-x: scroll !important;
+    }
+    td,th {
+        white-space: nowrap;
+    }
+    .button-holder {
+        position: fixed;
+        left: 0;
+        bottom: 20px;
+        display: block !important;
+        width: 600px;
+        padding-bottom: 20px;
+    }
+    .continue-button {
+        max-width: calc(100% - 30px) !important;
+        margin-left: 20px;
+    }
+    .risk-pop-up.halfwidth.padding-50 {
+        width: 90% !important;
+        padding: 20px !important;
+    }
+}

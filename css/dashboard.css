@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    position: relative;
+}
+aside {
+    width: 15%;
+    height: 100vh;
+
+}
+main {
+    width: 85%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.item {
+    display: flex;
+    align-items: center;
+    color: white !important;
+}
+.item img {
+    width: 20px;
+    filter: invert();
+    margin-right: 10px !important;
+    display: block !important;
+}
+
+table {
+    border: 1px solid #E0E0E0 !important;
+}
+
+td,th {
+    border-right: 1px solid #E0E0E0 !important;
+}

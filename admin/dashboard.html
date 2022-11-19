@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <title>Dashboard</title>    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <aside class="brand-color white-text space-box-20">
+        <h5 class="bebas">Parlay N Play</h5>
+
+        <div class="space-box"></div>
+        <div class="space-box"></div>
+        <div class="space-box"></div>
+
+        <a href="/admin/dashboard.html">
+            <div class="space-box item glass border10 clickable">
+                <img src="/assets/add-user.png" alt="add-user">
+                <p>Add New User</p>
+            </div>
+        </a>
+
+        <div class="space-box"></div>
+
+        <a href="/admin/users.html">
+            <div class="space-box item clickable">
+                <img src="/assets/user.png" alt="user">
+                <p>All User</p>
+            </div>
+        </a>
+
+        <div class="space-box"></div>
+
+        <a href="/admin/ticket.html">
+            <div class="space-box item clickable">
+                <img src="/assets/tickets.png" alt="ticket">
+                <p>View Ticket</p>
+            </div>
+        </a>
+
+        <div class="space-box"></div>
+
+        <a href="/admin/variables.html">
+            <div class="space-box item clickable">
+                <img src="/assets/settings.png" alt="ticket">
+                <p>Change Varaibles</p>
+            </div>
+        </a>
+
+        <div class="space-box"></div>
+
+        <a class="logout">
+            <div class="space-box item clickable border10">
+                <img src="/assets/exit.png" alt="ticket">
+                <p>Log Out</p>
+            </div>
+        </a>
+    </aside>
+
+    <main class="grey lighten-3">
+        <section class="space-box-20">
+            <h3 class="center">Create A New User Account</h3>
+            <div class="space-box"></div>
+
+            <div class="small-div border20 shadow padding-50m">
+    
+                <div class="firstname">
+                    <p class="small black-text">Firstname:</p>
+                    <input id="firstname" type="text" class="border10 height30 input-width">
+                </div>
+
+                <div class="lastname">
+                    <p class="small black-text">Lastname:</p>
+                    <input id="lastname" type="text" class="border10 height30 input-width">
+                </div>
+
+                <div class="email">
+                    <p class="small black-text">Email:</p>
+                    <input id="email" type="email" class="border10 height30 input-width">
+                </div>
+    
+                <div class="password">
+                    <p class="small black-text">password:</p>
+                    <input id="password" type="password" class="border10 height30 input-width">
+                </div>
+                <small class="red-text">Password should be atleast 8 characters long</small>
+    
+                <div class="space-box"></div>
+    
+                <a class="btn-large brand-color white-text waves-effect waves-light fullwidth border10 create-btn">Create User Account</a>
+                
+                <div class="space-box"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./javascript/general.js"></script>
+    <script src="./javascript/dashboard.js"></script>
+</body>
+</html>

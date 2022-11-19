@@ -1,0 +1,12 @@
+select {
+    display: block !important;
+}
+input#amount, input#password{
+    height: 10px !important;
+    padding: 10px;
+    border: 1px solid #cbcbcb !important;
+    width: calc(100% - 20px);
+}
+div.smallwidth {
+    margin: 10px auto;
+}
